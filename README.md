@@ -7,7 +7,7 @@ FUCK UP ALL THOES HOES ewtw
 I AM MOTHER  FUCKING STAR BOYS muji
 mujierhreh
 muji sale
-muji khateydffherh
+muji khateydffherheeeet
 i hatemyselfetwt
 i hate   yeryryw
 tero bau saley
