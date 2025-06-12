@@ -5,9 +5,9 @@ you aRE NOT GOOD ENOytyiUGH TO BEAT ME
 YOU ARE AL THE BITCHtityiES 
 FUCK UP ALL THOES Htyityityityit7u5tOES ewtw
 I AM MOTHER  FUCKING STAR BOYS ty
-mujierhrehtyitooooooou
+titiytiy
 muji sale
-uuuui hatemyselfetwt
+uuuui hatemyselfetwtiy
 i hate   yeryryw
 tero bau saley
 wfqf
