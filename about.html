@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker - About</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-title">Fitness Tracker</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="workout-logger.html" class="nav-link">Workout Logger</a></li>
+                    <li class="nav-item"><a href="progress-tracker.html" class="nav-link">Progress Tracker</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button id="theme-switcher" class="theme-switcher" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <section class="about-section">
+            <h2 class="section-title">About Fitness Tracker</h2>
+            <article class="info-card">
+                <h3>Our Mission</h3>
+                <p>
+                    The Fitness Tracker web app was created to provide a simple, intuitive, and effective tool
+                    for individuals to monitor their physical activity and progress. In an age where staying
+                    fit is crucial, having a reliable way to track your workouts can be a significant motivator.
+                </p>
+                <p>
+                    Our goal is to empower you by offering a personalized overview of your fitness journey,
+                    helping you identify patterns, celebrate milestones, and stay consistent with your training goals.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h3>Why I Made It</h3>
+                <p>
+                    As a developer with a passion for fitness, I often found myself looking for a straightforward
+                    way to log my workouts without the clutter of complex apps. This project is my answer to that need –
+                    a clean, no-frills fitness tracker built with fundamental web technologies.
+                </p>
+                <p>
+                    It served as a fantastic opportunity to deepen my understanding of HTML for semantic structure,
+                    CSS for responsive and appealing design, and JavaScript for dynamic interactions and data persistence.
+                    Every line of code was written to achieve the project goals while adhering to best practices and
+                    demonstrating core web development skills.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h3>How to Use This App</h3>
+                <ul>
+                    <li><strong>Home:</strong> Get an overview of the app and quick links to key features.</li>
+                    <li><strong>Workout Logger:</strong> This is where the magic happens! Fill in the exercise name, sets, reps, and optionally weight. Click "Add Workout" to save your entry. All your entries will appear in the table below. You can remove past entries using the "Remove" button.</li>
+                    <li><strong>Progress Tracker:</strong> See a summary of all your logged workouts. This page gives you a snapshot of your activity and details on individual workout sessions.</li>
+                    <li><strong>About:</strong> You're here! Learn about the app's purpose and how it was built.</li>
+                    <li><strong>Contact:</strong> Have questions or feedback? Use the form to send us a message.</li>
+                </ul>
+                <p>
+                    Remember, your workout data is saved directly in your browser using `localStorage`. This means your data
+                    will persist even if you close and reopen the browser, but it's specific to the browser and device you're using.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
