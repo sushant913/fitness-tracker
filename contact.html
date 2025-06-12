@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-title">Fitness Tracker</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="workout-logger.html" class="nav-link">Workout Logger</a></li>
+                    <li class="nav-item"><a href="progress-tracker.html" class="nav-link">Progress Tracker</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <button id="theme-switcher" class="theme-switcher" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <section class="contact-section">
+            <h2 class="section-title">Contact Us / Send Feedback</h2>
+            <p class="contact-intro">
+                Have questions, suggestions, or feedback about the Fitness Tracker? We'd love to hear from you!
+                Use the form below to get in touch.
+            </p>
+            <form id="contact-form" class="form-card">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required aria-describedby="name-error">
+                    <div class="error-message" id="name-error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required aria-describedby="email-error">
+                    <div class="error-message" id="email-error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Feedback on Workout Logger">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your message here..." required aria-describedby="message-error"></textarea>
+                    <div class="error-message" id="message-error" aria-live="polite"></div>
+                </div>
+
+                <button type="submit" class="button primary-button">Send Message <i class="fas fa-paper-plane"></i></button>
+                <div id="form-success-message" class="success-message" style="display:none;" aria-live="polite"></div>
+                <div id="form-general-error" class="error-message" style="display:none;" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>
