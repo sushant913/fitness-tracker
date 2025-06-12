@@ -10,3 +10,4 @@ muji sale
 muji khatey
 i hatemyself
 i hate   
+tero bau saley
