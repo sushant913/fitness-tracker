@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker - Workout Logger</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-title">Fitness Tracker</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="workout-logger.html" class="nav-link active">Workout Logger</a></li>
+                    <li class="nav-item"><a href="progress-tracker.html" class="nav-link">Progress Tracker</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button id="theme-switcher" class="theme-switcher" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <section class="workout-logger-section">
+            <h2 class="section-title">Log Your Workout</h2>
+            <form id="workout-form" class="form-card">
+                <div class="form-group">
+                    <label for="exercise-name">Exercise Name:</label>
+                    <input type="text" id="exercise-name" name="exercise-name" placeholder="e.g., Bench Press" required>
+                    <div class="error-message" id="exercise-name-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="sets">Sets:</label>
+                    <input type="number" id="sets" name="sets" placeholder="e.g., 3" min="1" required>
+                    <div class="error-message" id="sets-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="reps">Reps:</label>
+                    <input type="number" id="reps" name="reps" placeholder="e.g., 8" min="1" required>
+                    <div class="error-message" id="reps-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Weight (kg/lbs):</label>
+                    <input type="number" id="weight" name="weight" placeholder="e.g., 60" min="0">
+                </div>
+
+                <button type="submit" class="button primary-button">Add Workout <i class="fas fa-plus-circle"></i></button>
+                <div id="form-message" class="success-message" style="display:none;"></div>
+            </form>
+        </section>
+
+        <section class="workout-history-section">
+            <h2 class="section-title">Your Workout History</h2>
+            <div id="workout-message-box" class="message-box" style="display:none;"></div>
+            <div class="table-responsive">
+                <table id="workout-table" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Exercise</th>
+                            <th>Sets</th>
+                            <th>Reps</th>
+                            <th>Weight</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Workout entries will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+                <p id="no-workouts-message" class="no-data-message" style="display: block;">No workouts logged yet. Start by adding one above!</p>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
