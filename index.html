@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-title">Fitness Tracker</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="workout-logger.html" class="nav-link">Workout Logger</a></li>
+                    <li class="nav-item"><a href="progress-tracker.html" class="nav-link">Progress Tracker</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button id="theme-switcher" class="theme-switcher" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <section class="hero-section">
+            <h2 class="section-title">Welcome to Your Fitness Journey!</h2>
+            <p class="hero-text">
+                Track your workouts, monitor your progress, and stay motivated on your path to a healthier you.
+                This interactive web application helps you log your exercises, visualize your gains, and keep all your fitness data organized in one place.
+            </p>
+            <div class="hero-actions">
+                <a href="workout-logger.html" class="button primary-button">Start Logging Workouts <i class="fas fa-dumbbell"></i></a>
+                <a href="progress-tracker.html" class="button secondary-button">View Your Progress <i class="fas fa-chart-line"></i></a>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <h3 class="section-title">Key Features:</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-edit feature-icon"></i>
+                    <h4>Easy Workout Logging</h4>
+                    <p>Quickly add exercises with sets, reps, and weight. Keep a detailed record of your training.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-chart-bar feature-icon"></i>
+                    <h4>Track Your Progress</h4>
+                    <p>Visualize your workout history and see how much stronger you're getting over time.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-mobile-alt feature-icon"></i>
+                    <h4>Fully Responsive</h4>
+                    <p>Access your tracker on any device – desktop, tablet, or mobile – with a seamless experience.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-cloud-upload-alt feature-icon"></i>
+                    <h4>Local Storage Persistence</h4>
+                    <p>Your workout data is saved directly in your browser, so it's always there when you return.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
