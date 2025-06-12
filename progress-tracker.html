@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker - Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-title">Fitness Tracker</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="workout-logger.html" class="nav-link">Workout Logger</a></li>
+                    <li class="nav-item"><a href="progress-tracker.html" class="nav-link active">Progress Tracker</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button id="theme-switcher" class="theme-switcher" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <section class="progress-summary-section">
+            <h2 class="section-title">Your Progress Summary</h2>
+            <div id="progress-summary" class="summary-cards-grid">
+                <div class="summary-card">
+                    <i class="fas fa-calendar-check summary-icon"></i>
+                    <h3>Total Workouts Logged</h3>
+                    <p id="total-workouts" class="summary-value">0</p>
+                </div>
+                <div class="summary-card">
+                    <i class="fas fa-weight-hanging summary-icon"></i>
+                    <h3>Total Weight Lifted (Estimated)</h3>
+                    <p id="total-weight-lifted" class="summary-value">0 kg</p>
+                </div>
+                <div class="summary-card">
+                    <i class="fas fa-list summary-icon"></i>
+                    <h3>Unique Exercises</h3>
+                    <p id="unique-exercises" class="summary-value">0</p>
+                </div>
+            </div>
+            <p id="no-progress-message" class="no-data-message" style="display: block;">Log some workouts to see your progress here!</p>
+        </section>
+
+        <section class="detailed-progress-section">
+            <h2 class="section-title">Detailed Workout Logs</h2>
+            <div class="filter-sort-controls">
+                <div class="form-group">
+                    <label for="exercise-filter">Filter by Exercise:</label>
+                    <input type="text" id="exercise-filter" placeholder="e.g., Squats">
+                </div>
+                <div class="form-group">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="date-desc">Date (Newest First)</option>
+                        <option value="date-asc">Date (Oldest First)</option>
+                        <option value="exercise-asc">Exercise Name (A-Z)</option>
+                        <option value="exercise-desc">Exercise Name (Z-A)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table id="progress-detail-table" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Exercise</th>
+                            <th>Sets</th>
+                            <th>Reps</th>
+                            <th>Weight</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Detailed workout entries will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+                <p id="no-detailed-workouts-message" class="no-data-message" style="display: block;">No detailed workout data available.</p>
+            </div>
+        </section>
+    </main>
+
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>
